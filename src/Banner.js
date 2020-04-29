@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './as.png';
 import logo_WOW from './WOW.png';
 import { Link } from "react-router-dom";
-import Information from './Information.js';
+import Catalog from './Catalog.js';
 import About from './About.js';
 export default class Banner extends React.Component {
     render() {
@@ -22,7 +22,7 @@ export default class Banner extends React.Component {
                                 <Link class="nav-link" to="/about">關於本站<span class="sr-only">(current)</span></Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link" to="/information">學習資訊分享</Link>
+                                <Link class="nav-link" to="/catalog">學習經驗分享</Link>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

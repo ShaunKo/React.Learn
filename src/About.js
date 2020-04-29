@@ -4,10 +4,8 @@ export default class About extends React.Component{
     
     render(){
         return(
-            <html>
-            <head>
-                <title>關於本站</title>
-            </head>
+            
+            
             <div>
                 <div className="lastParagraph">
                 <h5 className="title">關於作者-Shaun</h5>
@@ -23,7 +21,6 @@ export default class About extends React.Component{
                 </div>
                 </div>
             </div>
-            </html>
         );
     }
 }
