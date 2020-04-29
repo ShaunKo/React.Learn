@@ -1,5 +1,6 @@
 import React from 'react';
 import project from './project.png';
+import initSimulator from './initSimulator.png';
 export default class Scrollspy extends React.Component{
     render(){
         return(
@@ -69,7 +70,10 @@ export default class Scrollspy extends React.Component{
   <p>打開初始專案會看到上圖這些，有關IOS的檔案都放在IOS資料夾裡，有關Android的檔案都放在Android資料夾內。node_modules資料夾裡面放的是一些套件，未來您如果有用npm下載package，都會出現在這裡面。
       package.json裡面則記錄一些資訊，您要知道的是他裡面還有紀錄您下載的package的版本號。App.js/index.js是程式進入點。了解這些後就可以打開App.js，開始寫程式囉！一起來看看App.js裡面長什麼樣子吧！</p>
   <h4 id="item-4">初始畫面</h4>
-  <p>...</p>
+  <p>進入您的專案，進入ios資料夾，雙擊 您的專案名稱.xcworkspace（用Xcode打開），打開後按快捷鍵 command+R 開啟模擬器。</p>
+  <center>
+    <img src={initSimulator} width="250" height="500" alt="logo" /><p>App.js裡的程式碼就可以變成這個頁面</p>
+  </center>
   <h4 id="item-5">實作前端頁面</h4>
   <p>...</p>
   <h5 id="item-5-1">登入</h5>
