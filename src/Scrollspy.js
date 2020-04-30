@@ -1,6 +1,7 @@
 import React from 'react';
 import project from './project.png';
 import initSimulator from './initSimulator.png';
+
 export default class Scrollspy extends React.Component{
     render(){
         return(
@@ -75,9 +76,17 @@ export default class Scrollspy extends React.Component{
     <img src={initSimulator} width="250" height="500" alt="logo" /><p>App.js裡的程式碼就可以變成這個頁面</p>
   </center>
   <h4 id="item-5">實作前端頁面</h4>
-  <p>...</p>
+  <p>通常，我會在專案路徑下新增以下幾個資料夾：</p>
+  <p>1. src資料夾 : 我會把前端頁面的component放在這裡</p>
+  <p>2. redux資料夾 : 裡面又有兩個資料夾 action跟 reducers</p>
+  <p>3. service資料夾 : 如果後端是用Express.js / MySql 的話，我會建立這個資料夾，來放後端的東西</p>
+  <p>4. 如果資料庫是用Firebase，則直接用Firebase提供的指令建立資料夾就可以了</p>
+  <div>
+      新增好資料夾後，我們開始來實作吧！
+  </div>
   <h5 id="item-5-1">登入</h5>
-  <p>...</p>
+  <p>在自建的src資料夾中，加入Login.js（記得！！！Component的檔名一定要是大寫！），然後到<a href="https://reactnative.dev/docs/getting-started">React Native官網</a>上看有什麼Api可以用。</p>
+  <p>由於React Native框架先前已經載入過了（可以去node_module跟package.json裡面檢查是否有React Native框架），可以把你想要使用的組建import 進來。</p>
   <h5 id="item-5-2">註冊</h5>
   <p>...</p>
   <h5 id="item-5-3">首頁</h5>
@@ -99,6 +108,7 @@ export default class Scrollspy extends React.Component{
 </div>
 </div>
 </div></div>
+
         );
     }
 } 

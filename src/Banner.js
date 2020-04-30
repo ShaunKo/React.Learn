@@ -4,10 +4,37 @@ import logo_WOW from './WOW.png';
 import { Link } from "react-router-dom";
 import Catalog from './Catalog.js';
 import About from './About.js';
+import './App.css';
 export default class Banner extends React.Component {
+    constructor(props){
+        super(props);
+        this.state={
+            clickAbout:true,
+            clickScrollspy:false,
+        }
+    }
+    clickAbout = () => {
+        this.setState({ clickAbout: true, clickScrollspy:false, });
+    }
+    clickScrollspy = () => {
+        this.setState({ clickAbout:false, clickScrollspy:true, });
+    }
     render() {
+        var clickedAboutProp = '';
+        var clickedScrollspyProp = '';
+        if (this.state.clickScrollspy ===true ){
+            clickedScrollspyProp = "nav-link active";
+        }
+        if(this.state.clickAbout === true){
+             clickedAboutProp = "nav-link active";
+        } 
+        if(this.state.clickScrollspy === false) {
+            clickedScrollspyProp = "nav-link";
+        }
+        if(this.state.clickAbout === false) {
+            clickedAboutProp = "nav-link";
+        }
         return (
-            
                 <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
                     <a class="navbar-brand" href="#">
                         {/* <img src={logo} width="80" height="60" alt="logo" /> */}
@@ -18,11 +45,16 @@ export default class Banner extends React.Component {
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <Link class="nav-link" to="/about">關於本站<span class="sr-only">(current)</span></Link>
+                            <li class="nav-item">
+                                <Link class={clickedAboutProp} to="/about" 
+                                    onClick={()=>{
+                                    this.clickAbout();
+                                    }}>關於本站</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link" to="/catalog">學習經驗分享</Link>
+                                <Link class={clickedScrollspyProp} to="/catalog" onClick={()=>{
+                                    this.clickScrollspy();
+                                    }}>學習經驗分享</Link>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
