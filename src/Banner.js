@@ -2,7 +2,6 @@ import React from 'react';
 import logo from './as.png';
 import logo_WOW from './WOW.png';
 import { Link } from "react-router-dom";
-import Catalog from './Catalog.js';
 import About from './About.js';
 import './App.css';
 export default class Banner extends React.Component {
@@ -52,7 +51,7 @@ export default class Banner extends React.Component {
                                     }}>關於本站</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class={clickedScrollspyProp} to="/catalog" onClick={()=>{
+                                <Link class={clickedScrollspyProp} to="/scrollspy" onClick={()=>{
                                     this.clickScrollspy();
                                     }}>學習經驗分享</Link>
                             </li>

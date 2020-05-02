@@ -16,7 +16,7 @@ export default class Scrollspy extends React.Component{
     <a class="nav-link" href="#item-1">安裝</a>
     <a class="nav-link" href="#item-2">git版本控制</a>
     <a class="nav-link" href="#item-3">專案架構</a>
-    <a class="nav-link" href="#item-4">初始畫面</a>
+    {/* <a class="nav-link" href="#item-4">初始畫面</a>
     <a class="nav-link" href="#item-5">實作前端頁面</a>
     <nav class="nav nav-pills flex-column">
       <a class="nav-link ml-3 my-1" href="#item-5-1">登入</a>
@@ -24,7 +24,7 @@ export default class Scrollspy extends React.Component{
       <a class="nav-link ml-3 my-1" href="#item-5-3">首頁</a>
       <a class="nav-link ml-3 my-1" href="#item-5-4">個人頁面</a>
       <a class="nav-link ml-3 my-1" href="#item-5-5">聊天室</a>
-    </nav>
+    </nav> */}
     <a class="nav-link" href="#item-6">React-Redux</a>
     <a class="nav-link" href="#item-7">資料庫</a>
     <nav class="nav nav-pills flex-column">
@@ -81,10 +81,10 @@ export default class Scrollspy extends React.Component{
   <p>2. redux資料夾 : 裡面又有兩個資料夾 action跟 reducers</p>
   <p>3. service資料夾 : 如果後端是用Express.js / MySql 的話，我會建立這個資料夾，來放後端的東西</p>
   <p>4. 如果資料庫是用Firebase，則直接用Firebase提供的指令建立資料夾就可以了</p>
-  <div>
+  {/* <div>
       新增好資料夾後，我們開始來實作吧！
-  </div>
-  <h5 id="item-5-1">登入</h5>
+  </div> */}
+  {/* <h5 id="item-5-1">登入</h5>
   <p>在自建的src資料夾中，加入Login.js（記得！！！Component的檔名一定要是大寫！），然後到<a href="https://reactnative.dev/docs/getting-started">React Native官網</a>上看有什麼Api可以用。</p>
   <p>由於React Native框架先前已經載入過了（可以去node_module跟package.json裡面檢查是否有React Native框架），可以把你想要使用的組建import 進來。</p>
   <h5 id="item-5-2">註冊</h5>
@@ -94,17 +94,22 @@ export default class Scrollspy extends React.Component{
   <h5 id="item-5-4">個人頁面</h5>
   <p>...</p>
   <h5 id="item-5-5">聊天室</h5>
-  <p>...</p>
+  <p>...</p> */}
   <h4 id="item-6">React-Redux</h4>
-  <p>...</p>
+  <p>
+      一開始使用<a href="https://github.com/reduxjs/react-redux">React-Redux</a>時覺得很難理解，但他能夠節省效能，開發大型專案最好還是使用一下。
+      Shaun在這邊簡單說明一下Redux，希望能方便您理解。Redux中，會有store，action跟reducers。
+      store是儲存全域的state，一個App僅會有一個store。
+      action是一個function，會回傳一個物件，用來描述要做什麼事情。
+      reducers是用來檢查你做了哪一個action，然後要發生什麼事情。
+ </p>
   <h4 id="item-7">資料庫</h4>
-  <p>...</p>
   <h5 id="item-7-1">Firebase</h5>
-  <p>...</p>
-  <h5 id="item-7-2">MySql</h5>
+  <p><a href="https://firebase.google.com">Firebase</a>是一個非常強大的即時資料庫，除了一般資料庫提供的新增修改刪除查詢資料以外，還有許多功能，它把原本一些複雜的事情變得很簡單，我之所以會用Firebase是因為我想試試時做一個即時聊天室，而且他有免費方案，用量對於一般小型App，是綽綽有餘的。</p>
+  {/* <h5 id="item-7-2">MySql</h5>
   <p>...</p>
   <h4 id="item-8">Express</h4>
-  <p>...</p>
+  <p>...</p> */}
 </div>
 </div>
 </div></div>
