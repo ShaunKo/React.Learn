@@ -31,7 +31,7 @@ export default class Scrollspy extends React.Component{
       <a class="nav-link ml-3 my-1" href="#item-7-1">Firebase</a>
       <a class="nav-link ml-3 my-1" href="#item-7-2">MySql</a>
     </nav>
-    <a class="nav-link" href="#item-8">Express</a>
+    {/* <a class="nav-link" href="#item-8">Express</a> */}
   </nav>
 </div>
 
